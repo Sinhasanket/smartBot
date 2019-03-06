@@ -1,4 +1,4 @@
-const clarifai   = require('clarifai'),
+const Clarifai   = require('clarifai'),
 
 //clarifai
 const app = new Clarifai.App({
