@@ -29,6 +29,10 @@ app.get('/profile:id', (req,res) => { profile.getProfile(req,res,db)});
 app.put('/image', (req,res) => { image.putImage(req,res,db) });
 app.post('/imageurl', (req,res) => { image.apiCall(req,res) });
 
-app.listen(process.env.PORT || 8080, () =>{
-    console.log('server is on..')
-});
+// app.listen(process.env.PORT || 8080, () =>{
+//     console.log('server is on..')
+// });
+
+app.listen((process.env.PORT || 8080), function(){
+  console.log('listening on *:5000');
+})
