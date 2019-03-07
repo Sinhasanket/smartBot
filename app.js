@@ -13,8 +13,7 @@ const db = knex({
     client: 'pg',
     connection: {
       connectionString : process.env.DATABASE_URL,
-   // host : 'postgresql-concentric-73664',
-    ssl:true,
+      ssl:true,
   }
 });
 
